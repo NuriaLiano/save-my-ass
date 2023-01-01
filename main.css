@@ -1,15 +1,18 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    font-size: 20px;
+    font-size: 100%;
 }
 
 /*general*/
+.supertitle{
+    font-size: 200%;
+}
 .title{
     font-size: 150%;
 }
 .subtitle{
-    font-size: 120%;
+    font-size: 125%;
 }
 
 /*******************************/
@@ -48,17 +51,14 @@ section{
     width: 50%;
 }
 
-.left h2{
-    font-size: x-large;
-    margin: 5% 0;
-}
 .left .inputname{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
+    background-color: green;
 }
 .left .inputname #childname{
     width: 50%;
@@ -68,9 +68,60 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1%;
+    width: 100%;
+    background-color: purple;
+}
+.left .gender .gen{
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    width: 100%;
+    background-color: plum;
 }
 .left .gender .boybox, .left .gender .girlbox{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    gap: 15%;
+}
+
+.left .group{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    margin-bottom: 1%;
+    width: 100%;
+    background-color: orange;
+}
+.left .group .students{
+    background-color: coral;
+    width: 100%;
+}
+.left .categories{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    margin-bottom: 1%;
+    width: 100%;
+    background-color: blue; 
+}
+.left .categories .generalCat{
+    background-color: rgb(100, 100, 197);
+}
+.left .categories .generalCat .calification{
+    background-color: aquamarine;
+}
+.left .categories .teensCat{
+    background-color: aqua;
+}
+.left .categories .tweensCat{
+    background-color: rgb(21, 146, 175);
+}
+.left .categories .grades{
+    background-color: rgb(94, 94, 138);
+}
+.right textarea{
+    width: 90%;
 }
