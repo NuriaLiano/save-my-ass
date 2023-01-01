@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Save My ASS</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">SAVE MY ASS</h1>
+        <img src="img/butt.png" alt="">
+    </header>
+    <section>
+        <div class="left">
+            <h2>Select characteristics</h2>
+            <div class="inputname">
+                <label for="childname">Enter name: </label><input type="text" name="childname" id="childname">
+            </div>
+            <div class="gender">
+                <h3 class="title">Gender</h3>
+                <div class="boybox">
+                    <label for="boy">Boy</label><input type="checkbox" name="gender" id="boy" value="Boy">
+                </div>
+                <div class="girlbox">
+                    <label for="girl">Girl</label><input type="checkbox" name="gender" id="girl" value="Girl">
+                </div>
+            </div>
+            <div class="group">
+                <h3 class="title">Level</h3>
+                <div class="teens"><!--es menor-->
+                    <h4 class="subtitle">TEENS</h4>
+                    <label for="ap1">AP1</label><input type="checkbox" name="ap1" id="ap1" value="ap1">
+                    <label for="ap2">AP2</label><input type="checkbox" name="ap2" id="ap2" value="ap2">
+                    <label for="ft1">FT1</label><input type="checkbox" name="ft1" id="ft1" value="ft1">
+                </div>
+                <div class="tweens">
+                    <h4 class="subtitle">TWEENS</h4>
+                    <label for="ft2">FT2</label><input type="checkbox" name="ft2" id="ft2" value="ft2">
+                    <label for="myst1">MYST1</label><input type="checkbox" name="myst1" id="myst1" value="myst1">
+                    <label for="myst2">MYST2</label><input type="checkbox" name="myst2" id="myst2" value="myst2">
+                </div>
+            </div>
+            <input type="button" value="save">
+            <div class="categories">
+                <h3 class="title">Categories</h3>
+                <div class="generalCat">
+                    <h4 class="subtitle">General Category</h4> <!--tiene que haber texto para cada categoria-->
+                    <label for="behaviour">Behaviour</label><input type="radio" name="gencat" id="behaviour" value="behaviour">
+                    <label for="work">work</label><input type="radio" name="gencat" id="work" value="work">
+                    <label for="performance">performance</label><input type="radio" name="gencat" id="performance" value="performance">
+                    <div class="calification">
+                        <h5 class="title">Califications</h5>
+                        <label for="poor">Poor</label><input type="radio" name="cal" id="poor" value="Poor">
+                        <label for="satisfactory">Satisfactory</label><input type="radio" name="cal" id="satisfactory" value="satisfactory">
+                        <label for="good">Good</label><input type="radio" name="cal" id="good" value="good">
+                        <label for="verygood">Very Good</label><input type="radio" name="cal" id="verygood" value="verygood">
+                        <label for="excellent">Excellent</label><input type="radio" name="cal" id="excellent" value="excellent">
+                    </div>
+                </div>
+                <input type="button" value="generate">
+                <div class="teensCat">
+                    <h4 class="subtitle">Teens Category</h4>
+                    <label for="homework">homework</label><input type="radio" name="teenscat" id="homework" value="homework">
+                    <label for="oraltest">oraltest</label><input type="radio" name="teenscat" id="oraltest" value="oraltest">
+                    <label for="writtentest">writtentest</label><input type="radio" name="teenscat" id="writtentest" value="writtentest">
+                </div>
+                <div class="tweensCat">
+                    <h4 class="subtitle">Tweens Category</h4>
+                    <label for="globalscore">globalscore</label><input type="radio" name="tweenscat" id="globalscore" value="globalscore">
+                    <label for="homework">homework</label><input type="radio" name="tweenscat" id="homework" value="homework">
+                </div>
+                <div class="grades">
+                    <h3 class="title">Grades</h5>
+                    <label for="failed">Failed</label><input type="radio" name="grades" id="failed" value="failed">
+                    <label for="pass">5-6</label><input type="radio" name="grades" id="pass" value="pass">
+                    <label for="good">6-7</label><input type="radio" name="grades" id="good" value="good">
+                    <label for="verygood">7-8</label><input type="radio" name="grades" id="verygood" value="verygood">
+                    <label for="excellent">8-9</label><input type="radio" name="grades" id="excellent" value="excellent">
+                    <label for="superexcellent">9-10</label><input type="radio" name="grades" id="superexcellent" value="superexcellent">
+                </div>
+            </div>
+            <input type="button" value="generate">
+        </div>
+        <div class="right">
+            <h2>Text Result</h2>
+            <input type="button" value="copy">
+            <input type="button" value="shuffle">
+            <p class="title">¡Your text!</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>

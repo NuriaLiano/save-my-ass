@@ -1,0 +1,76 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 20px;
+}
+
+/*general*/
+.title{
+    font-size: 150%;
+}
+.subtitle{
+    font-size: 120%;
+}
+
+/*******************************/
+header{
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5%;
+}
+h1{
+    font-size: xx-large;
+}
+img{
+    width: 5%;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.left{
+    background-color: red;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15%;
+}
+.right{
+    background-color: green;
+    width: 50%;
+}
+
+.left h2{
+    font-size: x-large;
+    margin: 5% 0;
+}
+.left .inputname{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    margin-bottom: 5%;
+}
+.left .inputname #childname{
+    width: 50%;
+}
+.left .gender{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left .gender .boybox, .left .gender .girlbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
