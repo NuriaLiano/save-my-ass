@@ -7,31 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js"></script>
     <link rel="stylesheet" href="main.css">
-    <title>Save My ASS</title>
+    <title>Save My ASS | Text generator</title>
 </head>
 
 <body>
     <header>
-        <h1 class="title">SAVE MY ASS</h1>
+        <h1>SAVE MY</h1>
         <img src="img/butt.png" alt="">
     </header>
     <section>
-        <div class="left">
-            <h2 class="supertitle">Select characteristics</h2>
+        <div class="mainbox">
             <div class="inputname">
-                <label for="childname">Enter name: </label><input type="text" name="childname" id="childname">
+                <h3 class="title">Name</h3>
+                <input type="text" name="childname" id="childname" placeholder="Enter name">
             </div>
             <div class="gender">
                 <h3 class="title">Gender</h3>
                 <div class="gen">
-                    <div class="boybox">
-                        <label for="boy">Boy</label><input type="checkbox" name="gender" id="boy" value="Boy">
-                    </div>
-                    <div class="girlbox">
-                        <label for="girl">Girl</label><input type="checkbox" name="gender" id="girl" value="Girl">
-                    </div>
+                    <label for="boy">Boy</label><input type="checkbox" name="gender" id="boy" value="Boy">
+                    <label for="girl">Girl</label><input type="checkbox" name="gender" id="girl" value="Girl">
                 </div>
-                
             </div>
             <div class="group">
                 <h3 class="title">Level</h3>
@@ -50,7 +45,9 @@
                     </div>
                 </div>
             </div>
-            <input type="button" value="save">
+            <input type="button" class="btnmainbox" value="save">
+        </div>
+        <div class="secondbox">
             <div class="categories">
                 <h3 class="title">Categories</h3>
                 <div class="generalCat">
@@ -91,10 +88,10 @@
             </div>
             <input type="button" value="generate">
         </div>
-        <div class="right">
+        <div class="thirdbox">
             <h2 class="supertitle">Text Result</h2>
-            <input type="button" value="copy">
-            <input type="button" value="shuffle">
+            <input type="button" class="btncopy" value="copy">
+            <input type="button" class="btnshuffle" value="shuffle">
             <h3 class="title">¡Your text!</h3>
             <textarea name="" id="" cols="30" rows="10"></textarea>
         </div>

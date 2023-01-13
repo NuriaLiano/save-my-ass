@@ -1,127 +1,134 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/*general*/
+/******** GENERAL ********/
+
 .supertitle{
-    font-size: 200%;
-}
-.title{
-    font-size: 150%;
-}
-.subtitle{
-    font-size: 125%;
-}
-
-/*******************************/
-header{
-    background-color: aqua;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 5%;
-}
-h1{
-    font-size: xx-large;
-}
-img{
-    width: 5%;
-}
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-.left{
-    background-color: red;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 15%;
-}
-.right{
-    background-color: green;
-    width: 50%;
-}
-
-.left .inputname{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
-    margin-bottom: 1%;
-    background-color: green;
-}
-.left .inputname #childname{
-    width: 50%;
-}
-.left .gender{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1%;
-    width: 100%;
-    background-color: purple;
-}
-.left .gender .gen{
-    display: flex;
-    flex-direction: row;
-    gap: 15%;
-    width: 100%;
-    background-color: plum;
-}
-.left .gender .boybox, .left .gender .girlbox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 15%;
-}
-
-.left .group{
-    display: flex;
-    flex-direction: column;
-    justify-content:left;
-    margin-bottom: 1%;
-    width: 100%;
-    background-color: orange;
-}
-.left .group .students{
-    background-color: coral;
-    width: 100%;
-}
-.left .categories{
-    display: flex;
-    flex-direction: column;
-    justify-content:left;
-    margin-bottom: 1%;
-    width: 100%;
-    background-color: blue; 
-}
-.left .categories .generalCat{
-    background-color: rgb(100, 100, 197);
-}
-.left .categories .generalCat .calification{
-    background-color: aquamarine;
-}
-.left .categories .teensCat{
-    background-color: aqua;
-}
-.left .categories .tweensCat{
-    background-color: rgb(21, 146, 175);
-}
-.left .categories .grades{
-    background-color: rgb(94, 94, 138);
-}
-.right textarea{
+    font-size: 35px;
+    border-bottom: 2px solid purple;
     width: 90%;
 }
+
+.title{
+    font-size: 30px;
+    border-bottom: 2px solid purple;
+    width: 90%;
+}
+
+.subtitle{
+    font-size: 20px;
+    border-bottom: 2px solid greenyellow;
+    width: 90%; 
+    margin: 2% 0;
+}
+
+/***************************/
+
+/******** HEADER ********/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid red;
+}
+header img{
+    width: 8%;
+}
+/***************************/
+
+section{
+    margin: 0 1px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+/******** FIRST BOX ********/
+
+.mainbox{
+    grid-area: 1 / 1 / 2 / 2;
+    margin: 1% 0;
+    background-color: red;
+    display: grid;
+    grid-template-columns: 50% 30%;
+    grid-template-rows: 30% 70%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.inputname, .gender, .group{
+    margin: 4%;
+}
+.inputname label{
+    width: 40%;
+}
+#childname{
+    margin-top: 4%;
+    width: 70%;
+    margin-left: auto;
+}
+
+.gen, .teens, .tweens{
+    margin-top: 4%;
+    font-size: 20px;
+}
+.gen input, .teens input, .tweens input{
+    margin: 2% 2%;
+}
+
+.students{
+    margin: 2%;
+}
+
+.btnmainbox{
+    width: 50%;
+    height: 20%;
+}
+
+/***************************/
+
+/******** SECOND BOX ********/
+
+.secondbox{
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: aqua;
+}
+
+/***************************/
+
+/******** THIRD BOX ********/
+
+.thirdbox{
+    grid-area: 1 / 2 / 3 / 3;
+    background-color: gold;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.thirdbox h2{
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.btncopy{
+    grid-area: 2 / 1 / 3 / 2;
+}
+.btnshuffle{
+    grid-area: 2 / 2 / 3 / 3;
+}
+.thirdbox h3{
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+.thirdbox textarea{
+    grid-area: 4 / 1 / 5 / 3;
+}
+
+
+/***************************/
