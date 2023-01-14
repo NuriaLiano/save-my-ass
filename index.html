@@ -12,8 +12,13 @@
 
 <body>
     <header>
-        <h1>SAVE MY</h1>
-        <img src="img/butt.png" alt="">
+        <div class="maintitle">
+            <h1>SAVE MY</h1>
+            <img src="img/butt.png" alt=""> 
+        </div>
+        <div class="darkmode">
+            <img src="img/dark_mode.png" alt="">
+        </div>
     </header>
     <section>
         <div class="mainbox">
@@ -45,55 +50,83 @@
                     </div>
                 </div>
             </div>
-            <input type="button" class="btnmainbox" value="save">
+            <div class="btns">
+                <img src="img/save.png" alt="save button">
+                <img src="img/clear.png" alt="clear button">
+            </div>
+            <!-- <input type="button" class="btnmainbox" value="save"> -->
         </div>
         <div class="secondbox">
-            <div class="categories">
-                <h3 class="title">Categories</h3>
-                <div class="generalCat">
-                    <h4 class="subtitle">General Category</h4> <!--tiene que haber texto para cada categoria-->
-                    <label for="behaviour">Behaviour</label><input type="radio" name="gencat" id="behaviour" value="behaviour">
-                    <label for="work">work</label><input type="radio" name="gencat" id="work" value="work">
-                    <label for="performance">performance</label><input type="radio" name="gencat" id="performance" value="performance">
-                    <div class="calification">
-                        <h5 class="title">Califications</h5>
-                        <label for="poor">Poor</label><input type="radio" name="cal" id="poor" value="Poor">
-                        <label for="satisfactory">Satisfactory</label><input type="radio" name="cal" id="satisfactory" value="satisfactory">
-                        <label for="good">Good</label><input type="radio" name="cal" id="good" value="good">
-                        <label for="verygood">Very Good</label><input type="radio" name="cal" id="verygood" value="verygood">
-                        <label for="excellent">Excellent</label><input type="radio" name="cal" id="excellent" value="excellent">
-                    </div>
+            <h2 class="supertitle">Categories</h2>
+            <div class="generalCat">
+                <div class="cat">
+                    <h3 class="title">General Category</h3> <!--tiene que haber texto para cada categoria-->
+                    <label for="behaviour">Behaviour</label><input type="radio" name="gencat" id="behaviour"
+                        value="behaviour">
+                    <label for="work">Work</label><input type="radio" name="gencat" id="work" value="work">
+                    <label for="performance">Performance</label><input type="radio" name="gencat" id="performance"
+                        value="performance">
                 </div>
-                <input type="button" value="generate">
+                <div class="calification">
+                    <h4 class="subtitle">Califications</h4>
+                    <label for="poor">Poor</label><input type="radio" name="cal" id="poor" value="Poor">
+                    <label for="satisfactory">Satisfactory</label><input type="radio" name="cal" id="satisfactory"
+                        value="satisfactory">
+                    <label for="good">Good</label><input type="radio" name="cal" id="good" value="good">
+                    <label for="verygood">Very Good</label><input type="radio" name="cal" id="verygood"
+                        value="verygood">
+                    <label for="excellent">Excellent</label><input type="radio" name="cal" id="excellent"
+                        value="excellent">
+                </div>
+                <div class="btngenerate">
+                   <input type="button" class="btngenerate" value="generate"> 
+                </div>
+                
+            </div>
+            <div class="specificCat">
                 <div class="teensCat">
-                    <h4 class="subtitle">Teens Category</h4>
-                    <label for="homework">homework</label><input type="radio" name="teenscat" id="homework" value="homework">
-                    <label for="oraltest">oraltest</label><input type="radio" name="teenscat" id="oraltest" value="oraltest">
-                    <label for="writtentest">writtentest</label><input type="radio" name="teenscat" id="writtentest" value="writtentest">
+                    <h3 class="title">Teens Category</h3>
+                    <label for="homework">Homework</label><input type="radio" name="teenscat" id="homework"
+                        value="homework">
+                    <label for="oraltest">Oral test</label><input type="radio" name="teenscat" id="oraltest"
+                        value="oraltest">
+                    <label for="writtentest">Written test</label><input type="radio" name="teenscat" id="writtentest"
+                        value="writtentest">
                 </div>
                 <div class="tweensCat">
-                    <h4 class="subtitle">Tweens Category</h4>
-                    <label for="globalscore">globalscore</label><input type="radio" name="tweenscat" id="globalscore" value="globalscore">
-                    <label for="homework">homework</label><input type="radio" name="tweenscat" id="homework" value="homework">
+                    <h3 class="title">Tweens Category</h3>
+                    <label for="globalscore">Global score</label><input type="radio" name="tweenscat" id="globalscore"
+                        value="globalscore">
+                    <label for="homework">Homework</label><input type="radio" name="tweenscat" id="homework"
+                        value="homework">
                 </div>
                 <div class="grades">
-                    <h3 class="title">Grades</h5>
+                    <h4 class="subtitle">Grades</h4>
                     <label for="failed">Failed</label><input type="radio" name="grades" id="failed" value="failed">
                     <label for="pass">5-6</label><input type="radio" name="grades" id="pass" value="pass">
                     <label for="good">6-7</label><input type="radio" name="grades" id="good" value="good">
                     <label for="verygood">7-8</label><input type="radio" name="grades" id="verygood" value="verygood">
-                    <label for="excellent">8-9</label><input type="radio" name="grades" id="excellent" value="excellent">
-                    <label for="superexcellent">9-10</label><input type="radio" name="grades" id="superexcellent" value="superexcellent">
+                    <label for="excellent">8-9</label><input type="radio" name="grades" id="excellent"
+                        value="excellent">
+                    <label for="superexcellent">9-10</label><input type="radio" name="grades" id="superexcellent"
+                        value="superexcellent">
                 </div>
+                <div class="btngentext2">
+                   <input type="button" class="btngentext2" value="generate"> 
+                </div>
+                
             </div>
-            <input type="button" value="generate">
         </div>
         <div class="thirdbox">
             <h2 class="supertitle">Text Result</h2>
-            <input type="button" class="btncopy" value="copy">
-            <input type="button" class="btnshuffle" value="shuffle">
+            <div class="btncopy">
+                <img src="img/copy.png" alt="copy button">
+            </div>
+            <div class="btnshuffle">
+                <img src="img/shuffle.png" alt="shuffle button">
+            </div>
             <h3 class="title">¡Your text!</h3>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea name="" id="" cols="30" rows="10" readonly></textarea>
         </div>
     </section>
     <footer></footer>

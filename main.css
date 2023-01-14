@@ -9,12 +9,14 @@
     font-size: 35px;
     border-bottom: 2px solid purple;
     width: 90%;
+    margin: 1% 0;
 }
 
 .title{
     font-size: 30px;
     border-bottom: 2px solid purple;
     width: 90%;
+    margin: 2% 0;
 }
 
 .subtitle{
@@ -29,9 +31,22 @@
 /******** HEADER ********/
 header{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid red;
+}
+.maintitle{
+    display: flex;
+    width: 100%;
+    
+}
+
+.darkmode{
+    width: 100%;
+}
+.darkmode img{
+    width: 5%;
 }
 header img{
     width: 8%;
@@ -42,7 +57,7 @@ section{
     margin: 0 1px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 0.5 repeat(1, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
@@ -51,7 +66,7 @@ section{
 
 .mainbox{
     grid-area: 1 / 1 / 2 / 2;
-    margin: 1% 0;
+    margin: 1%;
     background-color: red;
     display: grid;
     grid-template-columns: 50% 30%;
@@ -63,6 +78,7 @@ section{
 .inputname, .gender, .group{
     margin: 4%;
 }
+
 .inputname label{
     width: 40%;
 }
@@ -70,6 +86,8 @@ section{
     margin-top: 4%;
     width: 70%;
     margin-left: auto;
+    border: none;
+    border-radius: 2px;
 }
 
 .gen, .teens, .tweens{
@@ -80,14 +98,23 @@ section{
     margin: 2% 2%;
 }
 
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+.btns img{
+    width: 15%;
+}
+
 .students{
     margin: 2%;
 }
 
-.btnmainbox{
-    width: 50%;
-    height: 20%;
-}
+
+
 
 /***************************/
 
@@ -96,6 +123,72 @@ section{
 .secondbox{
     grid-area: 2 / 1 / 3 / 2;
     background-color: aqua;
+    margin: 1%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 0.2fr repeat(2, 0.4fr);
+}
+
+.generalCat{
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 1fr 0,2fr;
+    grid-template-rows: 0.2fr repeat(2, 0.5fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.cat{
+    grid-area: 1/1/2/2;
+}
+.calification{
+    grid-area: 2/1/3/2;
+}
+
+.btngenerate{
+    grid-area: 1/2/3/3;
+}
+
+
+.specificCat{
+    background-color: orange;
+    display: grid;
+    grid-template-columns: 1fr 0,2fr;
+    grid-template-rows: 0.2fr repeat(3, 0.5fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.teensCat{
+    grid-area: 1/1/2/2;
+}
+.tweenCat{
+    grid-area: 2/1/3/2;
+}
+.grades{
+    grid-area: 3/1/4/2;
+}
+.btngentext2, .btngenerate{
+    grid-area: 1/2/4/3;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btngentext2 input, .btngenerate input{
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    height: 20%;
+}
+
+
+.generalCat, .specificCat{
+    margin: 1% 4% ;
+}
+.cat input, .calification input, .teensCat input, .tweensCat input, .grades input{
+    margin: 2% 2%;
 }
 
 /***************************/
@@ -105,11 +198,16 @@ section{
 .thirdbox{
     grid-area: 1 / 2 / 3 / 3;
     background-color: gold;
+    margin: 1%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 5% 5% 5% 80%;    
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr); */
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .thirdbox h2{
@@ -118,17 +216,51 @@ section{
 
 .btncopy{
     grid-area: 2 / 1 / 3 / 2;
+    width: 100%;
+    display: flex;
+    align-items:flex-end;
+    justify-content:flex-end;
+    margin-right: 2%;
 }
+.btncopy img{
+    width: 10%;
+}
+.btncopy img:hover{
+    background-color: yellowgreen;
+    border-radius: 5px;
+    transition: 0.5s;
+    box-shadow: 0 0 26px rgba(0,0,0, 0.7);
+}
+
 .btnshuffle{
     grid-area: 2 / 2 / 3 / 3;
+    width: 100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    margin-left: 2%;
 }
+.btnshuffle img{
+    width: 10%;
+}
+.btnshuffle img:hover{
+    background-color: yellowgreen;
+    border-radius: 5px;
+    transition: 0.5s;
+    box-shadow: 0 0 26px rgba(0,0,0, 0.7);
+}
+
 .thirdbox h3{
     grid-area: 3 / 1 / 4 / 3;
 }
 
 .thirdbox textarea{
     grid-area: 4 / 1 / 5 / 3;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 26px rgba(0,0,0, 0.5);
 }
-
 
 /***************************/
