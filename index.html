@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js"></script>
     <link rel="stylesheet" href="main.css">
+    <script>
+        let date = new Date();
+        let pr = date.getFullYear()
+        console.log(document.querySelector("#printDate").nodeType)
+        document.getElementById("printDate").innerHTML = pr;
+
+    </script>
     <title>Save My ASS | Text generator</title>
 </head>
 
@@ -14,10 +21,7 @@
     <header>
         <div class="maintitle">
             <h1>SAVE MY</h1>
-            <img src="img/butt.png" alt=""> 
-        </div>
-        <div class="darkmode">
-            <img src="img/dark_mode.png" alt="">
+            <img src="img/butt_white.png" alt=""> 
         </div>
     </header>
     <section>
@@ -29,8 +33,8 @@
             <div class="gender">
                 <h3 class="title">Gender</h3>
                 <div class="gen">
-                    <label for="boy">Boy</label><input type="checkbox" name="gender" id="boy" value="Boy">
-                    <label for="girl">Girl</label><input type="checkbox" name="gender" id="girl" value="Girl">
+                    <label for="boy">Boy</label><input type="radio" name="gender" id="boy" value="Boy">
+                    <label for="girl">Girl</label><input type="radio" name="gender" id="girl" value="Girl">
                 </div>
             </div>
             <div class="group">
@@ -38,21 +42,21 @@
                 <div class="students">
                     <div class="teens"><!--es menor-->
                         <h4 class="subtitle">TEENS</h4>
-                        <label for="ap1">AP1</label><input type="checkbox" name="ap1" id="ap1" value="ap1">
-                        <label for="ap2">AP2</label><input type="checkbox" name="ap2" id="ap2" value="ap2">
-                        <label for="ft1">FT1</label><input type="checkbox" name="ft1" id="ft1" value="ft1">
+                        <label for="ap1">AP1</label><input type="radio" name="teens" id="ap1" value="ap1">
+                        <label for="ap2">AP2</label><input type="radio" name="teens" id="ap2" value="ap2">
+                        <label for="ft1">FT1</label><input type="radio" name="teens" id="ft1" value="ft1">
                     </div>
                     <div class="tweens">
                         <h4 class="subtitle">TWEENS</h4>
-                        <label for="ft2">FT2</label><input type="checkbox" name="ft2" id="ft2" value="ft2">
-                        <label for="myst1">MYST1</label><input type="checkbox" name="myst1" id="myst1" value="myst1">
-                        <label for="myst2">MYST2</label><input type="checkbox" name="myst2" id="myst2" value="myst2">
+                        <label for="ft2">FT2</label><input type="radio" name="tweens" id="ft2" value="ft2">
+                        <label for="myst1">MYST1</label><input type="radio" name="tweens" id="myst1" value="myst1">
+                        <label for="myst2">MYST2</label><input type="radio" name="tweens" id="myst2" value="myst2">
                     </div>
                 </div>
             </div>
             <div class="btns">
-                <img src="img/save.png" alt="save button">
-                <img src="img/clear.png" alt="clear button">
+                <img class="btnSave" src="img/save.png" alt="save button">
+                <img class="btnClear" src="img/clear.png" alt="clear button">
             </div>
             <!-- <input type="button" class="btnmainbox" value="save"> -->
         </div>
@@ -129,7 +133,11 @@
             <textarea name="" id="" cols="30" rows="10" readonly></textarea>
         </div>
     </section>
-    <footer></footer>
+    <footer>
+        <p>	&#169; Copyright NL <span id="printDate"></span></p>
+        <p id="dev">Designed and developed with <img src="img/metal_white.png" alt="metal hand picture"> by NL</a></p>
+
+    </footer>
 </body>
 
 </html>
