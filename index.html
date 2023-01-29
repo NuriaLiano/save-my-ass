@@ -8,10 +8,7 @@
     <script src="index.js"></script>
     <link rel="stylesheet" href="main.css">
     <script>
-        let date = new Date();
-        let pr = date.getFullYear()
-        console.log(document.querySelector("#printDate").nodeType)
-        document.getElementById("printDate").innerHTML = pr;
+        
 
     </script>
     <title>Save My ASS | Text generator</title>
@@ -33,8 +30,8 @@
             <div class="gender">
                 <h3 class="title">Gender</h3>
                 <div class="gen">
-                    <label for="boy">Boy</label><input type="radio" name="gender" id="boy" value="Boy">
-                    <label for="girl">Girl</label><input type="radio" name="gender" id="girl" value="Girl">
+                    <label for="boy">Boy</label><input type="radio" name="gender" id="boy" value="Boy" class="gender">
+                    <label for="girl">Girl</label><input type="radio" name="gender" id="girl" value="Girl" class="gender">
                 </div>
             </div>
             <div class="group">
@@ -42,15 +39,15 @@
                 <div class="students">
                     <div class="teens"><!--es menor-->
                         <h4 class="subtitle">TEENS</h4>
-                        <label for="ap1">AP1</label><input type="radio" name="teens" id="ap1" value="ap1">
-                        <label for="ap2">AP2</label><input type="radio" name="teens" id="ap2" value="ap2">
-                        <label for="ft1">FT1</label><input type="radio" name="teens" id="ft1" value="ft1">
+                        <label for="ap1">AP1</label><input type="radio" name="level" id="ap1" value="ap1">
+                        <label for="ap2">AP2</label><input type="radio" name="level" id="ap2" value="ap2">
+                        <label for="ft1">FT1</label><input type="radio" name="level" id="ft1" value="ft1">
                     </div>
                     <div class="tweens">
                         <h4 class="subtitle">TWEENS</h4>
-                        <label for="ft2">FT2</label><input type="radio" name="tweens" id="ft2" value="ft2">
-                        <label for="myst1">MYST1</label><input type="radio" name="tweens" id="myst1" value="myst1">
-                        <label for="myst2">MYST2</label><input type="radio" name="tweens" id="myst2" value="myst2">
+                        <label for="ft2">FT2</label><input type="radio" name="level" id="ft2" value="ft2">
+                        <label for="myst1">MYST1</label><input type="radio" name="level" id="myst1" value="myst1">
+                        <label for="myst2">MYST2</label><input type="radio" name="level" id="myst2" value="myst2">
                     </div>
                 </div>
             </div>
@@ -83,7 +80,7 @@
                         value="excellent">
                 </div>
                 <div class="btngenerate">
-                   <input type="button" class="btngenerate" value="generate"> 
+                   <input type="button" class="btngenerate" value="Let's do it"> 
                 </div>
                 
             </div>
@@ -116,7 +113,7 @@
                         value="superexcellent">
                 </div>
                 <div class="btngentext2">
-                   <input type="button" class="btngentext2" value="generate"> 
+                   <input type="button" class="btngentext2" value="Show me the text, baby"> 
                 </div>
                 
             </div>
@@ -124,17 +121,17 @@
         <div class="thirdbox">
             <h2 class="supertitle">Text Result</h2>
             <div class="btncopy">
-                <img src="img/copy.png" alt="copy button">
+                <img src="img/copy.png" alt="copy button" class="btncopy">
             </div>
             <div class="btnshuffle">
-                <img src="img/shuffle.png" alt="shuffle button">
+                <img src="img/shuffle.png" alt="shuffle button" class="btnshuffle">
             </div>
             <h3 class="title">¡Your text!</h3>
             <textarea name="" id="" cols="30" rows="10" readonly></textarea>
         </div>
     </section>
     <footer>
-        <p>	&#169; Copyright NL <span id="printDate"></span></p>
+        <p>	&#169; Copyright NL <span class="printDate"></span></p>
         <p id="dev">Designed and developed with <img src="img/metal_white.png" alt="metal hand picture"> by NL</a></p>
 
     </footer>

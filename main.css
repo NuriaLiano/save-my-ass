@@ -4,27 +4,38 @@
 }
 body{
     background-color: #2a2a2a;
-    color: white;
+    /* color: white; */
+}
+
+:root{
+    --backgroundColor: #2a2a2a ;
+    --titleLine: black ;
+    --subtitleLine: black ;
+    --boxOne: #A7D49B ; 
+    --boxTwo: #A7D49B ;
+    --boxThree: #92AC86 ;
+    --borderBtns: #ED6A5A  ;
+    --backgroundSelected: #6b8963;
 }
 /******** GENERAL ********/
 
 .supertitle{
     font-size: 35px;
-    border-bottom: 2px solid purple;
+    /*border-bottom: 2px solid purple;*/
     width: 90%;
     margin: 1% 0;
 }
 
 .title{
     font-size: 30px;
-    border-bottom: 2px solid purple;
+    /*border-bottom: 2px solid purple;*/
     width: 90%;
     margin: 2% 0;
 }
 
 .subtitle{
     font-size: 20px;
-    border-bottom: 2px solid greenyellow;
+    /*border-bottom: 2px solid greenyellow;*/
     width: 90%; 
     margin: 2% 0;
 }
@@ -45,6 +56,7 @@ header{
     text-align: center;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 header img{
     width: 8%;
@@ -73,12 +85,12 @@ section{
     justify-content: center;
     align-items: center;
 
-    background: rgba(199, 7, 7, 0.7);
+    /* background: rgb(116, 183, 174); */
+    background-color:var(--boxOne);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.1px);
     -webkit-backdrop-filter: blur(4.1px);
-    border: 1px solid rgba(255, 0, 0, 0.25);
 }
 .inputname, .gender, .group{
     margin: 4%;
@@ -120,7 +132,7 @@ section{
 }
 
 .btnSave:hover, .btnClear:hover{
-    border-bottom:2px solid rgb(255, 0, 0)
+    border-bottom:2px solid var(--borderBtns)
 }
 
 
@@ -134,14 +146,15 @@ section{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 0.2fr repeat(2, 0.4fr);
+    width: 98%;
+    padding-left: 2%;
 
-
-    background: rgba(0, 204, 255, 0.64);
+    /*background: rgba(208, 143, 239, 0.86);*/
+    background-color: var(--boxTwo);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.2px);
     -webkit-backdrop-filter: blur(4.2px);
-    border: 1px solid rgba(0, 255, 255, 0.25);
 }
 
 .generalCat{
@@ -199,7 +212,7 @@ section{
 }
 
 .btngentext2 input:hover, .btngenerate input:hover{
-    border-bottom:2px solid rgb(0, 255, 225)
+    border-bottom:2px solid var(--borderBtns)
 }
 
 .generalCat, .specificCat{
@@ -226,12 +239,12 @@ section{
     justify-content: center;
     align-items: center;
 
-    background: rgba(131, 203, 22, 0.64);
+    /* background: rgb(241, 231, 155); */
+    background-color: var(--boxThree);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.2px);
     -webkit-backdrop-filter: blur(4.2px);
-    border: 1px solid rgba(255, 167, 0, 0.25);
 }
 
 .thirdbox h2{
@@ -262,7 +275,7 @@ section{
     width: 10%;
 }
 .btnshuffle img:hover, .btncopy img:hover{
-    border-bottom:2px solid rgb(170, 255, 0);
+    border-bottom:2px solid var(--borderBtns)
 }
 
 .thirdbox h3{
@@ -282,13 +295,13 @@ section{
 
 /******** FOOTER BOX ********/
 footer{
-    border-top: 1px solid yellowgreen;
     padding-top: 1%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    color: white;
 }
 footer img{
     width: 20px;
