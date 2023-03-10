@@ -1,0 +1,29 @@
+{
+  "name": "save-my-ass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "directories": {
+    "doc": "data/docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/Nuria_Liano/save-my-ass.git"
+  },
+  "author": "webli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Nuria_Liano/save-my-ass/issues"
+  },
+  "homepage": "https://gitlab.com/Nuria_Liano/save-my-ass#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "natural": "^6.2.0"
+  }
+}
