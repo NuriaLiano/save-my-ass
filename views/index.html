@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../public/js/app.js"></script>
+    <link rel="stylesheet" href="../public/css/main.css">
+    <script>
+        
+
+    </script>
+    <title>Save My ASS | Text generator</title>
+</head>
+
+<body>
+    <header>
+        <div class="maintitle">
+            <h1>SAVE MY</h1>
+            <img src="../public/img/butt_white.png" alt=""> 
+        </div>
+    </header>
+    <section>
+        <div class="mainbox">
+            <div class="inputname">
+                <h3 class="title">Name</h3>
+                <input type="text" name="childname" id="childname" placeholder="Enter name">
+                <form id="miFormulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"><br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    
+                    <button type="submit">Enviar</button>
+                  </form>
+            </div>
+            <div class="gender">
+                <h3 class="title">Gender</h3>
+                <div class="gen">
+                    <label for="boy">Boy</label><input type="radio" name="gender" id="boy" value="Boy" class="gender">
+                    <label for="girl">Girl</label><input type="radio" name="gender" id="girl" value="Girl" class="gender">
+                </div>
+            </div>
+            <div class="group">
+                <h3 class="title">Level</h3>
+                <div class="students">
+                    <div class="teens"><!--es menor-->
+                        <h4 class="subtitle">TEENS</h4>
+                        <label for="ap1">AP1</label><input type="radio" name="level" id="ap1" value="ap1">
+                        <label for="ap2">AP2</label><input type="radio" name="level" id="ap2" value="ap2">
+                        <label for="ft1">FT1</label><input type="radio" name="level" id="ft1" value="ft1">
+                    </div>
+                    <div class="tweens">
+                        <h4 class="subtitle">TWEENS</h4>
+                        <label for="ft2">FT2</label><input type="radio" name="level" id="ft2" value="ft2">
+                        <label for="myst1">MYST1</label><input type="radio" name="level" id="myst1" value="myst1">
+                        <label for="myst2">MYST2</label><input type="radio" name="level" id="myst2" value="myst2">
+                    </div>
+                </div>
+            </div>
+            <div class="btns">
+                <img class="btnSave" src="../public/img/save.png" alt="save button">
+                <img class="btnClear" src="../public/img/clear.png" alt="clear button">
+            </div>
+            <!-- <input type="button" class="btnmainbox" value="save"> -->
+        </div>
+        <div class="secondbox">
+            <h2 class="supertitle">Categories</h2>
+            <div class="generalCat">
+                <div class="cat">
+                    <h3 class="title">General Category</h3> <!--tiene que haber texto para cada categoria-->
+                    <label for="behaviour">Behaviour</label><input type="radio" name="gencat" id="behaviour"
+                        value="behaviour">
+                    <label for="work">Work</label><input type="radio" name="gencat" id="work" value="work">
+                    <label for="performance">Performance</label><input type="radio" name="gencat" id="performance"
+                        value="performance">
+                </div>
+                <div class="calification">
+                    <h4 class="subtitle">Califications</h4>
+                    <label for="poor">Poor</label><input type="radio" name="cal" id="poor" value="Poor">
+                    <label for="satisfactory">Satisfactory</label><input type="radio" name="cal" id="satisfactory"
+                        value="satisfactory">
+                    <label for="good">Good</label><input type="radio" name="cal" id="good" value="good">
+                    <label for="verygood">Very Good</label><input type="radio" name="cal" id="verygood"
+                        value="verygood">
+                    <label for="excellent">Excellent</label><input type="radio" name="cal" id="excellent"
+                        value="excellent">
+                </div>
+                <div class="btngenerate">
+                   <input type="button" class="btngenerate" value="Let's do it"> 
+                </div>
+                
+            </div>
+            <div class="specificCat">
+                <div class="teensCat">
+                    <h3 class="title">Teens Category</h3>
+                    <label for="homework">Homework</label><input type="radio" name="teenscat" id="homework"
+                        value="homework">
+                    <label for="oraltest">Oral test</label><input type="radio" name="teenscat" id="oraltest"
+                        value="oraltest">
+                    <label for="writtentest">Written test</label><input type="radio" name="teenscat" id="writtentest"
+                        value="writtentest">
+                </div>
+                <div class="tweensCat">
+                    <h3 class="title">Tweens Category</h3>
+                    <label for="globalscore">Global score</label><input type="radio" name="tweenscat" id="globalscore"
+                        value="globalscore">
+                    <label for="homework">Homework</label><input type="radio" name="tweenscat" id="homework"
+                        value="homework">
+                </div>
+                <div class="grades">
+                    <h4 class="subtitle">Grades</h4>
+                    <label for="failed">Failed</label><input type="radio" name="grades" id="failed" value="failed">
+                    <label for="pass">5-6</label><input type="radio" name="grades" id="pass" value="pass">
+                    <label for="good">6-7</label><input type="radio" name="grades" id="good" value="good">
+                    <label for="verygood">7-8</label><input type="radio" name="grades" id="verygood" value="verygood">
+                    <label for="excellent">8-9</label><input type="radio" name="grades" id="excellent"
+                        value="excellent">
+                    <label for="superexcellent">9-10</label><input type="radio" name="grades" id="superexcellent"
+                        value="superexcellent">
+                </div>
+                <div class="btngentext2">
+                   <input type="button" class="btngentext2" value="Show me the text, baby"> 
+                </div>
+                
+            </div>
+        </div>
+        <div class="thirdbox">
+            <h2 class="supertitle">Text Result</h2>
+            <div class="btncopy">
+                <img src="../public/img/copy.png" alt="copy button" class="btncopy">
+            </div>
+            <div class="btnshuffle">
+                <img src="../public/img/shuffle.png" alt="shuffle button" class="btnshuffle">
+            </div>
+            <h3 class="title">¡Your text!</h3>
+            <textarea name="" id="" cols="30" rows="10" readonly></textarea>
+        </div>
+    </section>
+    <footer>
+        <p>	&#169; Copyright NL <span class="printDate"></span></p>
+        <p id="dev">Designed and developed with <img src="../public/img/metal_white.png" alt="metal hand picture"> by NL</a></p>
+
+    </footer>
+</body>
+
+</html>
