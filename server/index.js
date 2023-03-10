@@ -1,7 +1,9 @@
 const fs = require('fs');
+const genre = "boy"
+//docs direcotory 
+//¡IMPORTANT! check if genre vars is girl or boy and it's deppend it choose one of them directory
+const path = 'data/docs/'+genre;
 
-//docs direcotory
-const path = 'data/docs';
 
 let fileContent = '';
 let paragraphs = [];
