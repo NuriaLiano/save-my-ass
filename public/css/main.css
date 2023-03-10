@@ -4,16 +4,16 @@
 }
 body{
     background-color: #2a2a2a;
-    /* color: white; */
+    color: rgb(220, 220, 220);
 }
 
 :root{
     --backgroundColor: #2a2a2a ;
     --titleLine: black ;
     --subtitleLine: black ;
-    --boxOne: #A7D49B ; 
-    --boxTwo: #A7D49B ;
-    --boxThree: #92AC86 ;
+    --boxOne: #424242 ; 
+    --boxTwo: #424242 ;
+    --boxThree: #424242 ;
     --borderBtns: #ED6A5A  ;
     --backgroundSelected: #6b8963;
 }
